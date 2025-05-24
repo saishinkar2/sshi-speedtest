@@ -1,19 +1,67 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <title>Internet Speed Test</title>
-  <link rel="stylesheet" href="style.css" />
-</head>
-<body>
-  <h1>Internet Speed Test</h1>
-  <div id="results">
-    <p>Download Speed: <span id="download">0</span> Mbps</p>
-    <p>Upload Speed: <span id="upload">0</span> Mbps</p>
-    <p>Ping: <span id="ping">0</span> ms</p>
-  </div>
-  <button id="start">Start Test</button>
+<html>
+  <head>
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="" />
+    <link
+      rel="stylesheet"
+      as="style"
+      onload="this.rel='stylesheet'"
+      href="https://fonts.googleapis.com/css2?display=swap&amp;family=Noto+Sans%3Awght%40400%3B500%3B700%3B900&amp;family=Space+Grotesk%3Awght%40400%3B500%3B700"
+    />
 
-  <script src="script.js"></script>
-</body>
+    <title>SSHI SpeedTest</title>
+    <link rel="icon" type="image/x-icon" href="data:image/x-icon;base64," />
+
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  </head>
+  <body>
+    <div class="relative flex size-full min-h-screen flex-col bg-[#121516] group/design-root overflow-x-hidden" style='font-family: "Space Grotesk", "Noto Sans", sans-serif;'>
+    <div class="layout-container flex h-full grow flex-col">
+      <header class="flex items-center justify-between whitespace-nowrap border-b border-solid border-b-[#2c3135] px-10 py-3">
+        <div class="flex items-center gap-4 text-white">
+          <div class="size-4">
+            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M24 4H6V17.3333V30.6667H24V44H42V30.6667V17.3333H24V4Z" fill="currentColor"></path>
+            </svg>
+          </div>
+          <h2 class="text-white text-lg font-bold leading-tight tracking-[-0.015em]">SSHI SpeedTest</h2>
+        </div>
+        <div class="flex flex-1 justify-end gap-8">
+            <div class="flex items-center gap-9">
+              <a class="text-[#111518] text-white text-sm font-medium leading-normal" href="index.html">Home</a>
+              <a class="text-[#111518] text-white text-sm font-medium leading-normal" href="speedrun.html">Speed Test</a>
+              <a class="text-[#111518] text-white text-sm font-medium leading-normal" href="about.html">About</a>
+              </div>
+      </header>
+        <div class="px-40 flex flex-1 justify-center py-5">
+          <div class="layout-content-container flex flex-col max-w-[960px] flex-1">
+            <div class="@container">
+              <div class="@[480px]:p-4">
+                <div
+                  class="flex min-h-[480px] flex-col gap-6 bg-cover bg-center bg-no-repeat @[480px]:gap-8 @[480px]:rounded-xl items-center justify-center p-4"
+                  style='background-image: linear-gradient(rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.4) 100%), url("https://lh3.googleusercontent.com/aida-public/AB6AXuDBqBs_7T9Qkk1xB88V9d4rHhRy1MyxVZ8Yw6z5nwNgxCMsjpGHQfx8p57I8HsPjjnJFT3SolUdyfItiEJFz7VWSY-JTgvGOJ7kPyOav6UbmBTq2Tl_hvttzRCjXtW9Q2WSMpnfPh2s5QQJgwBCaP5LPBxAvmpf-b4nRx4HsVSIksdQ9Ej0xl_bhZH8P6JDT09Q_bdbJ-icYUN8Ctq7HisbiZTrbfn2NEPElnxXBzrRdUHypupVBN43-r1EzOlqWDKc3IhuvLfNkIY");'
+                >
+                  <div class="flex flex-col gap-2 text-center">
+                    <h1
+                      class="text-white text-4xl font-black leading-tight tracking-[-0.033em] @[480px]:text-5xl @[480px]:font-black @[480px]:leading-tight @[480px]:tracking-[-0.033em]"
+                    >
+                      Check Your Internet Speed
+                    </h1>
+                    <h2 class="text-white text-sm font-normal leading-normal @[480px]:text-base @[480px]:font-normal @[480px]:leading-normal">
+                      Fast, accurate, and easy to use. Test your connection in seconds.
+                    </h2>
+                  </div>
+                  <a
+                  href="speedrun.html"
+                    class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-10 px-4 @[480px]:h-12 @[480px]:px-5 bg-[#1993e5] text-white text-sm font-bold leading-normal tracking-[0.015em] @[480px]:text-base @[480px]:font-bold @[480px]:leading-normal @[480px]:tracking-[0.015em]"
+                  > 
+                    <span class="truncate">Test Your Internet Speed</span>
+                    </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>

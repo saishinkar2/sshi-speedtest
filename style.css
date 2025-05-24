@@ -7,8 +7,13 @@ body {
 }
 
 h1 {
-  font-size: 2.5em;
+  font-size: 1.5em;
   margin-bottom: 30px;
+  position: absolute;
+  top: 20px;
+  left: 30px;
+  margin: 0;
+  text-align: left;
 }
 
 #results {
@@ -34,4 +39,8 @@ button {
 
 button:hover {
   background: #0056b3;
+}
+#ping-bar {
+  background: #ffffff; /* cyan-400 */
+  transition: width 0.3s;
 }
