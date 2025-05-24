@@ -1,4 +1,4 @@
-const serverBase = 'http://localhost:3000';
+const serverBase = 'https://sshi-speedtest-backend.onrender.com';
 
 async function testDownloadSpeed() {
   const downloadElement = document.getElementById('download');
